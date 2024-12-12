@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #7c27b6, #442479, #371e52); /* Gradiente com as cores fornecidas */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    align-content: center;
+}
+
+/* Contêiner principal */
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cabeçalho do login */
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Formulário de login */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    outline: none;
+}
+
+.login-form input:focus {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.login-form button {
+    background-color: #7c27b6;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 1px solid #7c27b6;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #ddd;
+}
+
+/* Rodapé do login */
+.login-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 3%;
+    text-align: center;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.divider span {
+    padding: 0 10px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: 0 20px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+#submit{
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.logo {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1; /* Garante que a logo fique sobre a imagem da luz */
+}
+
+.password-container {
+    position: relative;
+}
+
+#password {
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 37%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+
+.eye-icon:hover {
+    opacity: 0.7;
+}
+
+.light-effect {
+    position: absolute;
+    top: 18%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.light-img {
+    width: 500px;
+    height: auto;
+    opacity: 0.8;
+    filter: blur(1px);
+}
